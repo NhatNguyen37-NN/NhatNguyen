@@ -3,97 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cao Nhật Nguyên | Graphic Designer</title>
+  <title>Cao Nhat Nguyen | Graphic Designer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HEADER: fixed top navigation and theme control -->
   <header class="site-header">
-    <div class="brand">
-      <span class="name">Cao Nhật Nguyên</span>
-      <span class="role">Graphic Designer</span>
-    </div>
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">Light</button>
+    <a class="brand" href="#showcase">Cao Nhat Nguyen</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#showcase">Showcase</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main class="page-container">
-    <!-- HERO SECTION: introduction and headline -->
-    <section class="hero section-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Hi, I’m</p>
-        <h1> C<span class="accent">ao</span> Nhật Nguyên</h1>
-        <p class="hero-title">Graphic Designer</p>
-        <p class="hero-description">I build bold visual systems, clean branding, and expressive digital design with refined simplicity.</p>
+    <section class="hero" id="showcase">
+      <div class="hero-copy fade-section">
+        <p class="eyebrow">Cao Nhat Nguyen</p>
+        <h1>Graphic Designer</h1>
+        <p class="hero-text">I design premium brands, elevated visual systems, and polished campaign work that feels modern and purposeful.</p>
+        <a class="btn btn-primary" href="#works">View Projects</a>
+      </div>
+      <div class="hero-visual fade-section">
+        <div class="hero-visual-card">
+          <img class="hero-avatar" src="images/NHATNGUYEN.JPG" alt="Portrait of Cao Nhat Nguyen" />
+          <div class="hero-badge">Creative Direction • Brand Design</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section section-block fade-section">
+      <div class="featured-card">
+        <div class="featured-content">
+          <span class="section-label">Featured Project</span>
+          <h2>Burger Website</h2>
+          <p>A modern, responsive website for a burger chain with a focus on food photography and user experience.</p>
+          <a class="btn btn-secondary" href="#works">Explore the project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works section-block" id="works">
+      <div class="section-header fade-section">
+        <span class="section-label">Selected works</span>
+        <h2>Featured projects</h2>
+        <p>Focused work with a strong visual direction, balanced storytelling, and premium craft.</p>
+      </div>
+
+      <div class="works-grid">
+        <article class="project-card project-large project1 fade-section">
+          <div class="project-overlay"></div>
+          <div class="project-copy">
+            <span class="project-category">Branding</span>
+            <h3>Arc Labs</h3>
+          </div>
+        </article>
+
+        <article class="project-card project-tall project2 fade-section">
+          <div class="project-overlay"></div>
+          <div class="project-copy">
+            <span class="project-category">Poster</span>
+            <h3>Polaris Launch</h3>
+          </div>
+        </article>
+
+        <article class="project-card project-small project3 fade-section">
+          <div class="project-overlay"></div>
+          <div class="project-copy">
+            <span class="project-category">Packaging</span>
+            <h3>Vela Coffee</h3>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="about section-block" id="about">
-      <h2>About Me</h2>
-      <p>I’m a passionate graphic designer driven by branding, digital design, and visual storytelling. I create polished, thoughtful experiences that connect audiences with memorable identity and modern aesthetics.</p>
-    </section>
-
-    <section class="projects section-block" id="projects">
-      <div class="section-header">
-        <h2>Featured Projects</h2>
-        <p>Selected creative work that blends art direction, layout, and concept development.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <span class="project-label">Neon Brand Identity</span>
-          <h3>Brand identity for a nightlife concept</h3>
-          <p>Designed a luminous visual system with bold typography, neon gradients, and memorable brand marks.</p>
-          <span class="project-role">Role: Designer</span>
-        </article>
-
-        <article class="project-card">
-          <span class="project-label">Futuristic Poster Series</span>
-          <h3>Campaign posters for a tech exhibition</h3>
-          <p>Created a series of futuristic posters using layered geometry, metallic textures, and dynamic color contrast.</p>
-          <span class="project-role">Role: Designer</span>
-        </article>
-
-        <article class="project-card">
-          <span class="project-label">Minimal Coffee Packaging</span>
-          <h3>Packaging design for an artisan coffee line</h3>
-          <p>Developed minimal packaging with elegant typography, soft tactile details, and calming abstract forms.</p>
-          <span class="project-role">Role: Designer</span>
-        </article>
-
-        <article class="project-card">
-          <span class="project-label">Social Media Campaign 2025</span>
-          <h3>Visual strategy for a seasonal launch</h3>
-          <p>Built a cohesive campaign with expressive motion-ready assets, bold storytelling, and consistent brand voice.</p>
-          <span class="project-role">Role: Designer</span>
-        </article>
+      <div class="about-card fade-section">
+        <h2>About</h2>
+        <p>I create clear visual systems for brands that need to feel premium, confident, and memorable. My work bridges identity, packaging, and campaign design with a strong focus on detail and direction.</p>
       </div>
     </section>
 
     <section class="contact section-block" id="contact">
-      <h2>Contact</h2>
-      <p>Interested in talking about a project, collaboration, or a new visual direction? Reach out below.</p>
-      <a class="contact-link" href="mailto:hello@caonguyen.design">hello@caonguyen.design</a>
+      <div class="contact-card fade-section">
+        <h2>Let's work together</h2>
+        <p>Interested in a visual refresh or brand launch? Reach out and let’s create something impactful.</p>
+        <a class="contact-link" href="mailto:hello@caonguyen.design">hello@caonguyen.design</a>
+      </div>
     </section>
   </main>
 
-  <!-- Minimal JavaScript for theme toggle only -->
   <script>
-    const toggle = document.getElementById('theme-toggle');
-    const root = document.documentElement;
-    const themeKey = 'portfolio-theme';
-
-    const applyTheme = (theme) => {
-      root.dataset.theme = theme;
-      toggle.textContent = theme === 'light' ? 'Dark' : 'Light';
-      localStorage.setItem(themeKey, theme);
-    };
-
-    const storedTheme = localStorage.getItem(themeKey);
-    applyTheme(storedTheme === 'light' ? 'light' : 'dark');
-
-    toggle.addEventListener('click', () => {
-      const nextTheme = root.dataset.theme === 'light' ? 'dark' : 'light';
-      applyTheme(nextTheme);
+    const links = document.querySelectorAll('.site-nav a');
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        if (link.hash) {
+          event.preventDefault();
+          document.querySelector(link.hash).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
+
+    const fadeSections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    fadeSections.forEach((section) => observer.observe(section));
   </script>
 </body>
 </html>
