@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cao Nhật Nguyên | Graphic Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER: fixed top navigation and theme control -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="name">Cao Nhật Nguyên</span>
+      <span class="role">Graphic Designer</span>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">Light</button>
+  </header>
+
+  <main class="page-container">
+    <!-- HERO SECTION: introduction and headline -->
+    <section class="hero section-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Hi, I’m</p>
+        <h1> C<span class="accent">ao</span> Nhật Nguyên</h1>
+        <p class="hero-title">Graphic Designer</p>
+        <p class="hero-description">I build bold visual systems, clean branding, and expressive digital design with refined simplicity.</p>
+      </div>
+    </section>
+
+    <section class="about section-block" id="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate graphic designer driven by branding, digital design, and visual storytelling. I create polished, thoughtful experiences that connect audiences with memorable identity and modern aesthetics.</p>
+    </section>
+
+    <section class="projects section-block" id="projects">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Selected creative work that blends art direction, layout, and concept development.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="project-label">Neon Brand Identity</span>
+          <h3>Brand identity for a nightlife concept</h3>
+          <p>Designed a luminous visual system with bold typography, neon gradients, and memorable brand marks.</p>
+          <span class="project-role">Role: Designer</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-label">Futuristic Poster Series</span>
+          <h3>Campaign posters for a tech exhibition</h3>
+          <p>Created a series of futuristic posters using layered geometry, metallic textures, and dynamic color contrast.</p>
+          <span class="project-role">Role: Designer</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-label">Minimal Coffee Packaging</span>
+          <h3>Packaging design for an artisan coffee line</h3>
+          <p>Developed minimal packaging with elegant typography, soft tactile details, and calming abstract forms.</p>
+          <span class="project-role">Role: Designer</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-label">Social Media Campaign 2025</span>
+          <h3>Visual strategy for a seasonal launch</h3>
+          <p>Built a cohesive campaign with expressive motion-ready assets, bold storytelling, and consistent brand voice.</p>
+          <span class="project-role">Role: Designer</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-block" id="contact">
+      <h2>Contact</h2>
+      <p>Interested in talking about a project, collaboration, or a new visual direction? Reach out below.</p>
+      <a class="contact-link" href="mailto:hello@caonguyen.design">hello@caonguyen.design</a>
+    </section>
+  </main>
+
+  <!-- Minimal JavaScript for theme toggle only -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const themeKey = 'portfolio-theme';
+
+    const applyTheme = (theme) => {
+      root.dataset.theme = theme;
+      toggle.textContent = theme === 'light' ? 'Dark' : 'Light';
+      localStorage.setItem(themeKey, theme);
+    };
+
+    const storedTheme = localStorage.getItem(themeKey);
+    applyTheme(storedTheme === 'light' ? 'light' : 'dark');
+
+    toggle.addEventListener('click', () => {
+      const nextTheme = root.dataset.theme === 'light' ? 'dark' : 'light';
+      applyTheme(nextTheme);
+    });
+  </script>
+</body>
+</html>
